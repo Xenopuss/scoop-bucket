@@ -1,0 +1,26 @@
+{
+    "version": "3.5.0",
+    "description": "de4dot .NET deobfuscator and unpacker (Extended fork by GDATA)",
+    "homepage": "https://github.com/GDATAAdvancedAnalytics/de4dotEx",
+    "license": "GPL-3.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/GDATAAdvancedAnalytics/de4dotEx/releases/download/3.5.0/de4dotEx-3.5.0-net48.zip",
+            "hash": "eb9695f51ce65d04163d68caeca79d9b2a39c06b84ae5ffb938b9b4032d17f18"
+        }
+    },
+    "bin": [
+        ["de4dot-x64.exe", "de4dot"],
+        "de4dot.exe"
+    ],
+    "checkver": {
+        "github": "https://github.com/GDATAAdvancedAnalytics/de4dotEx"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/GDATAAdvancedAnalytics/de4dotEx/releases/download/$version/de4dotEx-$version-net48.zip"
+            }
+        }
+    }
+}

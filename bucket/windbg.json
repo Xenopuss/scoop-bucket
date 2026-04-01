@@ -1,0 +1,36 @@
+{
+    "version": "10.0.28000.1721",
+    "description": "Windows Debugger (WinDbg) command-line CLI tools optimized for AI Agents and reverse engineering tasks.",
+    "homepage": "https://github.com/Xenopuss/archive",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Xenopuss/archive/releases/download/windbg_x64_10.0.28000.1721/windbg_x64_10.0.28000.1721.7z",
+            "hash": "cccfdf4cadd328c7264804d696df94f8a26507091ecb518cdd78a2a33801d2ed"
+        }
+    },
+    "extract_dir": "x64",
+    "bin": [
+        "cdb.exe",
+        "ntsd.exe",
+        "kd.exe",
+        "gflags.exe",
+        "tlist.exe",
+        "kill.exe",
+        "windbg.exe"
+    ],
+    "checkver": {
+        "github": "https://github.com/Xenopuss/archive",
+        "regex": "windbg_x64_([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Xenopuss/archive/releases/download/windbg_x64_$version/windbg_x64_$version.7z"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/Xenopuss/archive/releases/tag/windbg_x64_$version",
+            "regex": "sha256:([a-fA-F0-9]{64})"
+        }
+    }
+}
