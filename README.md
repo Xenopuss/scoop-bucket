@@ -7,10 +7,8 @@ A custom [Scoop](https://scoop.sh/) bucket for various tools and applications.
 To add this bucket to your Scoop installation, run the following command in PowerShell:
 
 ```powershell
-scoop bucket add scoop-bucket https://github.com/<your-username>/scoop-bucket
+scoop bucket add scoop-bucket https://github.com/Xenopuss/scoop-bucket
 ```
-
-*Note: Replace `<your-username>` with your actual GitHub username.*
 
 ## Installing packages
 
