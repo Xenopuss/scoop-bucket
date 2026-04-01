@@ -12,15 +12,5 @@
     "bin": [
         ["de4dot-x64.exe", "de4dot"],
         "de4dot.exe"
-    ],
-    "checkver": {
-        "github": "https://github.com/GDATAAdvancedAnalytics/de4dotEx"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/GDATAAdvancedAnalytics/de4dotEx/releases/download/$version/de4dotEx-$version-net48.zip"
-            }
-        }
-    }
+    ]
 }
